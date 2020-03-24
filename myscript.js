@@ -34,4 +34,4 @@ for (var i = 0; i < ListaCognomi.length; i++) {
 // stampa la lista
 // stampa la posizione del nome
 
-document.getElementById('cognome').innerHTML = "Questa è la lista cognomi " + ListaCognomi + " " + "il tuo cognome è in posizione: " + PosizioneCognome
+document.getElementById('cognome').innerHTML = "Questa è la lista cognomi " + ListaCognomi + " ed il tuo cognome è in posizione: " + PosizioneCognome
