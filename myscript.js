@@ -3,9 +3,9 @@
 
 // Creazione array con Cognomi
 var ListaCognomi;
-ListaCognomi = ["Zanetti";"Abate";"Longo"];
+ListaCognomi = ["Zanetti","Abate","Longo"];
 
-console.log(ListaCognomi);
+console.log(ListaCognomi)
 
 // Chiedi all'untente il cognome
 var CognomeUtente;
@@ -19,7 +19,7 @@ ListaCognomi.push(CognomeUtente);
 console.log(ListaCognomi);
 
 // ordina la lista alfabeticamente
-ListaCognomi.sort();
+ListaCognomi = ListaCognomi.sort();
 
 console.log(ListaCognomi);
 
@@ -28,10 +28,10 @@ var i;
 var PosizioneCognome;
 for (var i = 0; i < ListaCognomi.length; i++) {
   if (ListaCognomi[i] == CognomeUtente) {
-    PosizioneCognome == i;
+    PosizioneCognome = i + 1;
   }
 }
 // stampa la lista
-document.getElementById('cognome').innerHTML = ListaCognomi;
-
 // stampa la posizione del nome
+
+document.getElementById('cognome').innerHTML = "Questa è la lista cognomi " + ListaCognomi + " " + "il tuo cognome è in posizione: " + PosizioneCognome
