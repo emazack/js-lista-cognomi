@@ -16,22 +16,24 @@ console.log(CognomeUtente);
 // Inserisci il cognome all'interno della lista
 ListaCognomi.push(CognomeUtente);
 
-console.log(ListaCognomi);
+// stampa la lista non ordinata
+document.getElementById('nonordinata').innerHTML = "Questa è la lista cognomi NON ordinata " + ListaCognomi;
 
 // ordina la lista alfabeticamente
-ListaCognomi = ListaCognomi.sort();
+var SortedListaCognomi = ListaCognomi.sort();
 
+console.log(SortedListaCognomi);
 console.log(ListaCognomi);
 
 // all'interno della lista cerca il nome e la sua posizione
 var i;
 var PosizioneCognome;
-for (var i = 0; i < ListaCognomi.length; i++) {
-  if (ListaCognomi[i] == CognomeUtente) {
+for (var i = 0; i < SortedListaCognomi.length; i++) {
+  if (SortedListaCognomi[i] == CognomeUtente) {
     PosizioneCognome = i + 1;
   }
 }
-// stampa la lista
+// stampa la lista ordinata
 // stampa la posizione del nome
 
-document.getElementById('cognome').innerHTML = "Questa è la lista cognomi " + ListaCognomi + " ed il tuo cognome è in posizione: " + PosizioneCognome
+document.getElementById('cognome').innerHTML = "Questa è la lista cognomi ordinata" + SortedListaCognomi + " ed il tuo cognome è in posizione: " + PosizioneCognome;
